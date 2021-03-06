@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity3">
+
+    <EditText
+        android:id="@+id/etValorEdit"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:ems="10"
+        android:hint="Valor"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toBottomOf="@+id/etTipoEdit"
+        app:layout_constraintStart_toEndOf="@+id/etTipoEdit" />
+
+    <EditText
+        android:id="@+id/etTipoEdit"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Sensor"
+        android:inputType="textPersonName"
+        app:layout_constraintStart_toStartOf="@+id/tvIdEdit"
+        app:layout_constraintTop_toBottomOf="@+id/tvIdEdit" />
+
+    <ImageView
+        android:id="@+id/ivSaveEdit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:background="@drawable/item_lista_borde"
+        app:layout_constraintBottom_toBottomOf="@+id/etValorEdit"
+        app:layout_constraintStart_toEndOf="@+id/etValorEdit"
+        app:srcCompat="@android:drawable/ic_menu_save" />
+
+    <ImageView
+        android:id="@+id/ivCancelEdit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:background="@drawable/item_lista_borde"
+        app:layout_constraintBottom_toBottomOf="@+id/ivSaveEdit"
+        app:layout_constraintStart_toEndOf="@+id/ivSaveEdit"
+        app:srcCompat="@android:drawable/ic_menu_close_clear_cancel" />
+
+    <TextView
+        android:id="@+id/tvIdEdit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:text="TextView"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>
